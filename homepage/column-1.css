@@ -1,0 +1,47 @@
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #f94144;
+  color: #ffffff;
+  text-align: center;
+  font: normal bold 16px/1 "Inter", sans-serif;
+  padding: 15px;
+  width: 275px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.secondary-btn {
+  display: inline-block;
+  border: 1px solid #f94144;
+  background-color: #ffffff;
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn span:after {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn:hover span {
+  padding-right: 25px;
+}
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* icons for individual buttons*/
+.join-lib-btn span:after {
+  content: "\f2bb";
+}
+.search-btn span:after {
+  content: "\f002";
+}
